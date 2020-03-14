@@ -37,9 +37,9 @@ inline void ChangeDinoColour(AShooterPlayerController* player, FString* message,
 		ArkApi::GetApiUtils().SendServerMessage(player, FLinearColor(255, 0, 0), "Incorrect Syntax: /sdc <Region> <Colour>");
 	}
 
-	if (Colour < 1 || Colour > 56 && Colour < 201 || Colour > 226)
+	if (Colour < 1 || Colour > 100 && Colour < 201 || Colour > 226)
 	{
-		ArkApi::GetApiUtils().SendServerMessage(player, FLinearColor(255, 0, 0), "Dino Colour must be 1 - 56 | 201-226");
+		ArkApi::GetApiUtils().SendServerMessage(player, FLinearColor(255, 0, 0), "Dino Colour must be 1 - 100 | 201-226");
 		return;
 	}
 	if (Region < 0 || Region > 5)
